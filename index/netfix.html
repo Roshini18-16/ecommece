@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+              background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNibjDk4NCFVIvgUU9JHXHnpcxmqG_G0fZfA&s");
+              background-repeat:no no-repeat;
+              background-size: cover;
+              background-attachment: scroll;
+            }
+        #language{
+         position:absolute; 
+         color:white; 
+         background-color:black; 
+         left:1200px; 
+         top:20px;
+        }
+        #labelbutton{
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin:0px;
+            height: 30px;
+        }
+        #email div{
+            width: 100px;
+            height:50px;
+            gap:5px
+        }
+        #button div{
+            width:100px;
+            height:50px;
+        }
+        #img{
+            display:flex;
+            justify-content:space-between;
+            width:900px;
+            height:300px;
+        }
+        .curved{
+            background:white;
+            color:red;
+            text-align: center;
+            padding:10px 20px;
+            clip-path: ellipse(100% 50% at 50% 100%);
+        }
+        .grid-container{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:10px;
+            padding:10px;
+        }
+        .grid-item{
+            border-radius: 8px;
+            Padding:20px;
+            width:200px
+        }
+        .num{
+            position: absolute;
+            top:1000px;
+            left:50px;
+            color: bisque;
+            font-size: 100px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:red; font-family: 'Times New Roman', Times, serif;">NETFLIX</h1>
+    <button style="position:absolute; color:white; background-color:red; left:1300px; top:20px; height:30px; width:70px;">sign in</button>
+            <select id="language" name="language" style=" height:30px; width:70px;">
+                <option value=""selected disabled>select</option>
+                <option value="Telugu">Telugu</option>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+            </select><br><br><br><br>
+    <h1 style="color:white; text-align:center; font-size:60px; margin-bottom: 5px;">Unlimited movies, TV<BR>shows and more</h1>
+    <h2 style="color:white; text-align:center; font-size:30px; margin-top:0;">watch anywhere .Cancel anytime</h2>
+    <div id="labelbutton">
+    <input type="Email" id="email" name="email" placeholder="email address" required>  
+        <button style="background-color:red"; id="button" > Get Started > </button>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <div class="curved">
+     </div>
+        <h1 style="text-align: center; color:aquamarine">TRENDING NOW</h1>
+    <br><br><br><br>
+    <div class="grid-container">
+        <span id="number">1</span>
+        <div class="grid-item"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJH8ocS-BmUPH8QTjr0m0fCQVc9DiGyITICw&s"><h1 class="num">1</h1></div>
+        <img class="grid-item" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202307/img_4650-three_four.jpeg?VersionId=E7M0hv0AyXUXEIRDQ89VmZweYkvp5DmB">
+        <img class="grid-item" src="https://m.media-amazon.com/images/M/MV5BNjBkOGQ1OWYtMTg3NC00MTRmLWFhNGMtNDkyMzFmZDliMDlmXkEyXkFqcGc@._V1_.jpg">
+        <img class="grid-item" src="https://image.tmdb.org/t/p/original/2wBlN0pC9U1LWmLNTdOuR76NSHe.jpg">
+        <img class="grid-item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgQ4lRWz8PpEDzbekNVOCDVeHaAckXa-ctUg&s">
+        </div>
+</body>
+</html>
